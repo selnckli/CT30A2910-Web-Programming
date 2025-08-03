@@ -1,43 +1,55 @@
-Welcome! 👋  
-This repository contains all my coursework for **CT30A2910 Web Programming** at LUT University, Autumn 2024.
+# Weather App – CT30A2910 Final Project
 
-Assignments and the final project are organized as separate branches for clarity.
-
----
-
-## 📚 Repository Structure
-
-- **main**: This branch (README, general info, project overview)
-- **week1**, **week2**, ...: Weekly assignment code in dedicated branches
-- **final-project**: Full source code for the Weather App
-
-To view any assignment, switch to the corresponding branch on GitHub or in your local repo.
+This is my final project for the LUT University course **CT30A2910 Web Programming** (Summer 2025).
 
 ---
 
-## 🌦️ Final Project: Weather App
+## 🌦️ Project Overview
 
-### Description
+The Weather App is a fully responsive web application built with plain HTML, CSS, and JavaScript.  
+It lets users check the weather anywhere in the world with a smooth, modern UI.
 
-My final project is a responsive Weather App built with plain HTML, CSS, and JavaScript (no frameworks).  
-The app lets users:
+**Features:**
+- 🔎 **Search by city** or use your **current location** (Geolocation API)
+- ☀️ **Current weather** displayed with icons and details
+- 📅 **7-day forecast** view with daily icons and numbers
+- 🕑 **24-hour hourly forecast** as scrollable cards
+- 💾 **Favorites bar**: save and revisit your favorite locations
+- 🌡️ **Unit switcher**: instantly view temperatures in Celsius, Fahrenheit, or Kelvin
+- 🎨 **Dynamic background**: color changes to reflect the weather (cold, warm, hot)
+- 📱 **Responsive design** for mobile and desktop
 
-- **Search weather** by city name or use their **current location** (via the Geolocation API)
-- See the **current weather** at their chosen location
-- View a **7-day forecast**
-- View a **24-hour hourly forecast** (displayed as a modern horizontal card layout)
-- **Switch temperature units** between Celsius, Fahrenheit, and Kelvin (all numbers update instantly)
-- **Tag and access favorite locations** from a favorites bar
-- Enjoy a UI that reflects the current weather visually (background color changes for hot, cold, warm)
-- Use the app easily on desktop and mobile (fully responsive design)
-
-The app uses [WeatherAPI](https://www.weatherapi.com/) as its data source.  
-All features were implemented with a focus on clarity, usability, and a modern, user-friendly look.
+All weather data is fetched from [WeatherAPI](https://www.weatherapi.com/).
 
 ---
 
-### How to Run the Project
+## 🚀 How to Run
 
-Clone the repository:
-   ```bash
-   git clone https://github.com/selnckli/CT30A2910-Web-Programming.git
+1. **Clone the repository and switch to the final project branch:**
+    ```bash
+    git clone https://github.com/selnckli/CT30A2910-Web-Programming.git
+    cd CT30A2910-Web-Programming
+    git checkout final-project
+    ```
+2. **Open `index.html` in your browser.**
+    - No build or installation steps required.
+
+---
+
+## 🛠️ Used Tech 
+
+- HTML5
+- CSS3 (Flexbox, responsive design)
+- Vanilla JavaScript (ES6)
+- [WeatherAPI](https://www.weatherapi.com/) (for weather data)
+
+---
+
+## 👤 Author
+
+**Selin Cekli**  
+[GitHub: selnckli](https://github.com/selnckli)
+
+---
+
+> This project is for educational use as part of LUT University coursework.
