@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <form id="weather">
+        <label for="input-loc">Location:</label>
+        <input type="text" id="input-loc" required>
+        <button type="submit" id="submit-data">Search</button>
+    </form>
+    <button id="myLoc">Click to Use My Location</button>
+    
+    <div class="unit-toggle">
+        <span class="unit-label">Choose units:</span>
+        <label><input type="radio" name="unit" value="C" checked>°C</label>
+        <label><input type="radio" name="unit" value="F">°F</label>
+        <label><input type="radio" name="unit" value="K">K</label>
+    </div>
+    
+    <div id="favorites-bar"></div>
+    <div id="weather-info"></div>
+</body>
+
+</html>
