@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Growth in Finland</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/frappe-charts/1.6.2/frappe-charts.min.iife.js" 
+            onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/npm/frappe-charts@1.6.2/dist/frappe-charts.min.iife.js'"></script>
+    <style>
+        body { 
+            font-family: system-ui, sans-serif; 
+            padding: 2rem; 
+            max-width: 800px; 
+            margin: auto; 
+            text-align: center; 
+        }
+        #chart { 
+            margin-top: 2rem; 
+        }
+        input, button { 
+            font-size: 1rem; 
+            padding: 0.5rem; 
+            margin: 0.25rem; 
+            border-radius: 5px; 
+            border: 1px solid #ccc; 
+        }
+        button { 
+            cursor: pointer; 
+            background-color: #f0f0f0; 
+        }
+        button:hover { 
+            background-color: #e0e0e0; 
+        }
+        #navigation { 
+            margin-top: 1rem; 
+            background-color: #007bff; 
+            color: white; 
+            text-decoration: none;
+            display: inline-block;
+        }
+        #navigation:hover { 
+            background-color: #0056b3; 
+        }
+        .error-message {
+            color: red;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #ffe6e6;
+            border-radius: 5px;
+            display: none;
+        }
+        .loading {
+            margin-top: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Population Growth</h1>
+    <form id="municipality-form">
+        <input type="text" id="input-area" placeholder="Enter a municipality name (e.g., Helsinki, Tampere)">
+        <button type="submit" id="submit-data">Submit</button>
+    </form>
+    <button id="add-data">Add Predicted Data Point</button>
+    
+    <div id="loading" class="loading" style="display: none;">Loading chart...</div>
+    <div id="error-message" class="error-message"></div>
+    <div id="chart"></div>
+    
+    <a href="newchart.html" id="navigation">View Births and Deaths Chart</a>
+
+    <!-- Load your JavaScript file after the DOM elements are defined -->
+    <script src="index.js"></script>
+</body>
+</html>

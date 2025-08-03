@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Births and Deaths Chart - Finland</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/frappe-charts/1.6.2/frappe-charts.min.iife.js" 
+            onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/npm/frappe-charts@1.6.2/dist/frappe-charts.min.iife.js'"></script>
+    <style>
+        body { 
+            font-family: system-ui, sans-serif; 
+            padding: 2rem; 
+            max-width: 800px; 
+            margin: auto; 
+            text-align: center; 
+        }
+        #chart { 
+            margin-top: 2rem; 
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-link:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #ffe6e6;
+            border-radius: 5px;
+            display: none;
+        }
+        .loading {
+            margin-top: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Population Growth</a>
+    
+    <h1>Births and Deaths Chart</h1>
+    
+    <div id="loading" class="loading">Loading chart...</div>
+    <div id="error-message" class="error-message"></div>
+    <div id="chart"></div>
+    <script src="newchart.js"></script>
+</body>
+</html>
